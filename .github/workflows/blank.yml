@@ -29,6 +29,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo building...
+          apt-get install qtbase5-dev qt5-qmake qtbase5-dev-tools libqt5printsupport5 libqt5xmlpatterns5-dev
           cmake -B build -DCMAKE_BUILD_TYPE=Release
           cd build
           make -j
