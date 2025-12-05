@@ -29,6 +29,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo building...
+          ls -l
           cp how_build/CMakeLists.txt .
           cp -r how_build/cmake .
           cmake -B build -DCMAKE_BUILD_TYPE=Release
